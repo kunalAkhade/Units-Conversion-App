@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Basic"
+    android:id="@+id/mainframe">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"><![CDATA[>
+
+        ]]>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Length"
+                android:textSize="8sp"
+                app:backgroundTint="#835A5A"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/ic_baseline_border_color_24"
+                app:iconGravity="textTop"
+                app:iconSize="20dp" />
+
+            <Button
+                android:id="@+id/force"
+                android:layout_width="103dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Area"
+                android:textSize="8sp"
+                app:backgroundTint="#835A5A"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/ic_baseline_square_24"
+                app:iconGravity="textTop"
+                app:iconSize="20dp" />
+
+            <Button
+                android:id="@+id/work"
+                android:layout_width="109dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="weight"
+                android:textSize="8sp"
+                app:backgroundTint="#835A5A"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/ic_baseline_monitor_weight_24"
+                app:iconGravity="textTop"
+                app:iconSize="20dp" />
+
+            <Button
+                android:id="@+id/power"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Volume"
+                android:textColorLink="#FFFFFF"
+                android:textSize="8sp"
+                app:backgroundTint="#835A5A"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/ic_baseline_brightness_1_24"
+                app:iconGravity="textTop"
+                app:iconSize="20dp" />
+        </LinearLayout>
+        <fragment
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.unitsconverter.Length"
+            android:background="#18854E"/>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
